@@ -11,30 +11,46 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <i class="fa-solid fa-bars"></i>
-      <p>MENU</p>
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <img src="/Logo.png" alt="logo" />
-      <i class="fa-solid fa-user"></i>
-      <nav class="navbar">
-        <a href="#">Nyhedsbreve</a>
-        <a href="#">Podcast</a>
-        <a href="#">Køb abonnement</a>
-      </nav>
 
-      <section id="annonce">
-        <img
-          src="/annonce_background.jpg"
-          alt="annonce sektion"
-          class="annonce_picture"
-        />
+
+
+
+    <article class="parent">
+      <section class="child_1"> <!--  1 (ingenting her) --> </section>
+
+      <section class="child_2"> <!--  2 (information logo og annonce derunder) --> 
+        <header>
+          <i class="fa-solid fa-bars"></i>
+          <p>MENU</p>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <img src="/Logo.png" alt="logo" />
+          <i class="fa-solid fa-user"></i>
+          <nav class="navbar">
+            <a href="#">Nyhedsbreve</a>
+            <a href="#">Podcast</a>
+            <a href="#">Køb abonnement</a>
+          </nav>
+    
+          <section id="annonce">
+            <img
+              src="https://placehold.co/800x300"
+              alt="annonce sektion"
+              class="annonce_picture"
+            />
+          </section>
+        </header>
       </section>
-    </header>
 
-    <main>
-      <article>
-        <aside>
+      <section class="child_3"> <!--  3 (tilhørende tekst til billede) --> 
+        <p class="side_image_text">
+          Rusland vil ikke bruge gasrørledningen, Nord Stream 2, som politisk
+          våben, lyder det fra folkene bag projektet. Rørledningen koster 70
+          mia. kr. og vil sende 55 mia. kubikmeter gas ind i Europa om året.
+        </p>
+      </section>
+
+      <section class="child_4"> <!--  4( stort artikel billede her) -->
+<aside>
           <span class="abonnement_redText">Abonnement</span>
           <span class="reading_time">LÆSETID: 7 MIN.</span>
         </aside>
@@ -43,12 +59,33 @@
         </h1>
         <h4>
           Nogle EU-lande frygter, at Rusland kan bruge Nord Stream 2 som
-          politisk våben mod Europa. Men i virkeligheden er det omvendt, mener
-          firmaerne bag rørledningen: Det er EU, der bruger gassen som våben
-          over for Putin. Information har været på charmetur med den russiske
+          politisk våben mod<br> Europa. Men i virkeligheden er det omvendt, mener
+          firmaerne bag rørledningen: Det er <br>EU, der bruger gassen som våben
+          over for Putin. Information har været på charmetur <br>med den russiske
           gas' europæiske venner
         </h4>
         <img src="/article.jpg" class="annonce_image" />
+      </section>
+
+      <section class="child_5"> <!--  5 ( udland... bla bla .... fotograf info -->
+        <header>
+              <p class="udland">UDLAND</p>
+        </header>
+      </section>
+
+      <section class="child_6"> <!--  6 (dato og derunder begynder atikelens tekst) -->
+        <p class="article_text">
+       <time datetime="2018-05-07">7. maj 2018 <br></time> 
+          »Jeg tænker, at vi lige taler os varme sammen, før vi begynder på interviewet,« siger Jens Müller, talsperson for det russiske gasfirma 
+          Nord Stream 2 AG. Vi sidder en gruppe journalister i en bus på vej til en gasterminal i Rotterdam, 
+          inviteret af folkene bag den kommende russiske gasrørledning, Nord Stream 2 (NS2), der efter planen skal krydse dansk farvand.<br>
+
+          På bussens bagsæde udvikler den 'uformelle dialog' sig hurtigt til et 20 minutters forsvar for den 12.000 kilometer lange rørledning, 
+          der sidste år blev viklet ind i det stadigt mere anspændte forhold mellem Rusland og EU. 
+          Det er derfor, de har inviteret Information og en række udenlandske medier til selv at konstatere, at NS2, som de kalder den, 
+          vitterligt kun er et kommercielt projekt. 
+          Og for i øvrigt at give »et indblik i EU’s indre gasmarked«. 
+        </p>
 
         <header class="payWall">
           <section>
@@ -64,37 +101,7 @@
           </section>
         </header>
 
-        <p>
-          Rusland vil ikke bruge gasrørledningen, Nord Stream 2, som politisk
-          våben, lyder det fra folkene bag projektet. Rørledningen koster 70
-          mia. kr. og vil sende 55 mia. kubikmeter gas ind i Europa om året.
-        </p>
-
-        <header>
-          <span
-            >UDLAND<br />
-            <time datetime="2018-05-07">7. maj 2018</time>
-          </span>
-
-          <span
-            >Jakob Stein<br />
-            Peter Nygaard Christensen
-          </span>
-        </header>
-
-        <p>
-          »Jeg tænker, at vi lige taler os varme sammen, før vi begynder på
-          interviewet,« siger Jens Müller, talsperson for det russiske gasfirma
-          Nord Stream 2 AG. Vi sidder en gruppe journalister i en bus på vej til
-          en gasterminal i Rotterdam, inviteret af folkene bag den kommende
-          russiske gasrørledning, Nord Stream 2 (NS2), der efter planen skal
-          krydse dansk farvand.
-        </p>
-      </article>
-    </main>
-
-
-    <p class="Did_you_read">Fik du læst?</p>
+        <p class="Did_you_read">Fik du læst?</p>
     <!-- Denne sektion ville jeg lave til en slider i JavaScript -->
     <section class="container_1"> 
       <article class="grid_item_1">
@@ -126,34 +133,34 @@
     <!-- Slut på slider  -->
 
 
-        <p>
-          <span class="the_latest_news">Seneste nyt</span>
-          <span class="information"> Information.dk</span>
-        </p>
+    <p class="news_and_information">
+      <span class="the_latest_news">Seneste nyt</span>
+      <span class="information">Information.dk</span>
+    </p>
         <!-- Grid med nested flex og grid inden i  -->
     <section class="container_2">
       <section class="left_column">
 
         <section class="nested_grid_left">
           <article class="grid_item_2">
-            <p class="article_heading_in_grid">Slut med møntbetaling i københavnske p-automater</p>
+            <p class="article_heading_in_grid first_articles_in_grid">Slut med møntbetaling i københavnske p-automater</p>
           </article>
           <article class="grid_item_2">
-            <p class="article_heading_in_grid">Energiminister: Afgift på biomasse er forkert vej at gå</p>
+            <p class="article_heading_in_grid first_articles_in_grid">Energiminister: Afgift på biomasse er forkert vej at gå</p>
           </article>
           <article class="grid_item_2">
-            <p class="article_heading_in_grid">Libanesisk premierministers parti går en tredjedel tilbage</p>
+            <p class="article_heading_in_grid first_articles_in_grid">Libanesisk premierministers parti går en tredjedel tilbage</p>
           </article>
           <article class="grid_item_2">
-            <p class="article_heading_in_grid">Ombudsmand: Offentligheden må se kronprinsens 10C-breve</p>
+            <p class="article_heading_in_grid first_articles_in_grid">Ombudsmand: Offentligheden må se kronprinsens 10C-breve</p>
           </article>
           <article class="grid_item_2">
-            <p class="article_heading_in_grid">WWF: Vildsvinehegn skader andre dyrearter i grænselandet</p>
+            <p class="article_heading_in_grid first_articles_in_grid">WWF: Vildsvinehegn skader andre dyrearter i grænselandet</p>
           </article>
           <article class="grid_item_2">
-            <p class="article_heading_in_grid">Atomaftale med Iran forsætter også uden USA</p>
+            <p class="article_heading_in_grid first_articles_in_grid">Atomaftale med Iran forsætter også uden USA</p>
           </article>
-          <article class="grid_item_2"><p class="article_heading_in_grid">Flere nyheder</p></article>
+          <article class="grid_item_2"><p class="article_heading_in_grid last_article">Flere nyheder</p></article>
         </section>
       </section>
       <section class="right_column">
@@ -213,13 +220,13 @@
     <section class="container_3">
       <section class="grid_item_3">  <p class="recommandation">Anbefalinger</p> </section>
       <section class="grid_item_3">  <p class="comments">Kommentarer</p> </section>
-      <section class="grid_item_3">  <span> Anbefal artikel</span> </section>
+      <section class="grid_item_3">  <span class="recommend_article"> Anbefal artikel</span> </section>
       <section class="grid_item_3">  <p class="person_who_commented">Henrik Holm Hansen</p>
         <p class="date_and_time">07. maj 2018 - 05.56</p>
         <p>
           Hvis det forholder sig som skrevet står at Rusland for mest ud nord
           stream 2 forstår jeg slet ikke politikerne og måske specielt EU ikke
-          bruger muligheden aktivt til presse endsige fortælle PUTIN at ruslands
+          bruger muligheden aktivt til presse<br> endsige fortælle PUTIN at ruslands
           opførsel i Ukraine ikke kan accepteres kommer der ikke penge i kassen
           kan oligarkerne ikke fodres!
         </p>
@@ -245,27 +252,39 @@
         </p>
         <span>Anbefal kommenrtar</span></section>
       <section class="grid_item_3"> </section>
-      <section class="grid_item_3">        <p>
-        Du skal være registreret bruger for at kommentere.
-        <a href="url">Log ind</a> eller <a href="url">opret bruger</a>.
-      </p></section>
+      <section class="grid_item_3">        
+        <p>
+          <span class="grey-text">Du skal være registreret bruger for at kommentere.</span>
+          <a href="url" class="black-text">Log ind</a> <span class="grey-text">eller</span> <a href="url" class="black-text">opret bruger</a>.
+        </p>
+    </section>
     </section>
     <!-- Slut på kommentar sektion -->
 
-    
+
+
+    <!-- Start på grid i footeren -->
     <footer>
-      <section>
-        <p>Information som E-avis</p>
+    <article class="footer_grid_container">
+      <section class="grid_item_4"><!-- Row 1, Col 1 --></section>
+      <section class="grid_item_4 footer_grid_image">
+        <img src="/Udklip.PNG" alt="" srcset="" />
+      </section>
+      <section class="grid_item_4"><!-- Row 1, Col 3 --></section>
+      <section class="grid_item_4"><!-- Row 1, Col 4 --></section>
+
+      <section class="grid_item_4">
+        <p class="bold_font e_avis">Information som E-avis</p>
         <p>
-          Du kan læse Information, lige som du vil. På din mobil, tablet eller
-          coputer - og helt ude i skoven.
+          Du kan læse Information, lige som du vil. <br> På din mobil, tablet eller
+          coputer - og <br>helt ude i skoven.
         </p>
-        <ul>
+        <ul class="read_where_you_want">
           <li>Læs e-avisen på din computer</li>
           <li>Download til Apple</li>
           <li>Download til Android</li>
         </ul>
-        <p>Følg avisen</p>
+        <p class="bold_font follow">Følg avisen</p>
         <ul>
           <li>Nyhedsbreve</li>
           <li>Facebook</li>
@@ -274,29 +293,31 @@
         </ul>
       </section>
 
-      <section><img src="/Udklip.PNG" alt="" srcset="" /></section>
+   <!--    <section class="grid_item_4">Row 2, Col 2</section> -->
 
-      <section>
-        <p>Information hver morgen</p>
-        <form>
-          <input type="text" />
-          <input type="submit" value="Tilmeld" />
-        </form>
+      <section class="grid_item_4">
+        <section>
+          <p class="bold_font information_every_morning">Information hver morgen</p>
+          <form class="sign_up_btn">
+            <input type="text" />
+            <input type="submit" value="Tilmeld" />
+          </form>
+        </section>
+  
+        <section>
+          <p class="bold_font buy_paper">Køb avisen</p>
+          <ul>
+            <li>Få et godt tilbud</li>
+            <li>Abonnement - selvbetjening</li>
+            <li>Abonnementsbetingelser</li>
+            <li>Information i løssalg</li>
+            <li>Hjælp til Information.dk</li>
+          </ul>
+        </section>
       </section>
 
-      <section>
-        <p>Køb avisen</p>
-        <ul>
-          <li>Få et godt tilbud</li>
-          <li>Abonnement - selvbetjening</li>
-          <li>Abonnementsbetingelser</li>
-          <li>Information i løssalg</li>
-          <li>Hjælp til Information.dk</li>
-        </ul>
-      </section>
-
-      <section>
-        <p>Om Information</p>
+      <section class="grid_item_4">
+        <p class="bold_font about_information">Om Information</p>
         <ul>
           <li>Redaktion</li>
           <li>Bureauet</li>
@@ -305,23 +326,27 @@
           <li>Ledige stillinger</li>
           <li>Økonomi og ledelse</li>
         </ul>
-        <p>Hosted hos Sentia</p>
+        <p class="sentia">Hosted hos Sentia</p>
       </section>
 
-      <section>
-        <p>
+      <section class="grid_item_4 footer_info">
+        <p class="info_text_footer">
           Ansvarshavende chefredaktør: Rune Lykkeberg | Dagbladet Information,
           Store Kongensgade 40C, 1264 København. Telefon: 3369 6000 | CVR:
-          63058416 | Privatlivspolitik | Cookies | Annoncering
+          63058416 | <br> Privatlivspolitik | Cookies | Annoncering
         </p>
-        <button>Skriv til os</button>
+        <button class="footer_btn">Skriv til os</button>
       </section>
-    </footer>
+    </article>
+  </footer>
+  <!-- Slut på grid i footeren  -->
 
     <footer>
       <a href="#"> <img scr="https://placehold.co/16x16" />Del</a>
       <a href="#"><img scr="https://placehold.co/16x16" />Tweet</a>
       <a href="#"><img scr="https://placehold.co/16x16" />Email</a>
     </footer>
+
+
   </body>
 </html>

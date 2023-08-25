@@ -2,10 +2,28 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-align: center;
+  /* text-align: center; */
   font-family: Georgia, serif;
   font-weight: 400;
+  margin-left: 10px;
+  margin-right: 20px;
 }
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 2fr 0.5fr 4fr; 
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.child_1 { grid-area: 1 / 1 / 2 / 2; }
+.child_2 { grid-area: 1 / 2 / 2 / 3; grid-row: 1 / 2; }
+.child_3 { grid-area: 2 / 1 / 3 / 2; }
+.child_4 { grid-area: 2 / 2 / 3 / 3; }
+.child_5 { grid-area: 3 / 1 / 4 / 2; }
+.child_6 { grid-area: 3 / 2 / 4 / 3; }
+
 
 .annonce_image {
   width: 50%; 
@@ -22,9 +40,22 @@
 }
 
 .navbar a {
-  margin-right: 80px; /* space between links */
+  margin-right: 80px; /* space between the three links */
   font-weight: bold;
+  text-decoration: none;
+  margin: 0 20px;
+  color: #333;
 }
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 2px solid #ccc; /* Light grey line above */
+  border-bottom: 2px solid #ccc; /* Light grey line below */
+}
+
 
 h1 {
   font-size: 80px;
@@ -34,6 +65,15 @@ h1 {
 .annonce_picture {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+.side_image_text {
+  margin-top: 330px;
+  text-align: right;
+}
+
+.article_text {
+  margin-top: 30px;
 }
 
 .abonnement_redText {
@@ -54,6 +94,7 @@ h4 {
 
 .payWall {
   margin-bottom: 30px;
+  
 }
 
 .payWall_header {
@@ -77,6 +118,12 @@ h4 {
 .black-link {
   color: black;
   text-decoration: none;
+}
+
+.udland {
+  color: red;
+  font-weight: bold;
+  margin-top: 30px;
 }
 
 .Did_you_read {
@@ -106,6 +153,15 @@ h4 {
 .information {
   color: red;
   font-weight: bold;
+}
+
+.news_and_information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px dotted grey;
+  margin-bottom: 20px;
 }
 
 .container_2 {
@@ -165,6 +221,15 @@ h4 {
   border: 1px solid #aaa;
 }
 
+
+/* Style for the grey dotted line in the grid nested inside another grid */
+.first_articles_in_grid:not(.last_article) {
+  border-bottom: 1px dotted grey;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
 .recommandation {
   color: red;
   font-weight: bold;
@@ -184,6 +249,10 @@ h4 {
   margin-top: 10px;
 }
 
+.recommend_article {
+  font-weight: bold;
+}
+
 .date_and_time {
   color: gray;
   margin-bottom: 30px;
@@ -201,4 +270,125 @@ h4 {
 .grid_item {
   border: 1px solid #ccc;
   padding: 10px;
+}
+
+/* Styling the bottom sentence in the grid where the user is asked to log in */
+.grey-text {
+  color: grey;
+}
+.black-text {
+  color: black;
+}
+
+
+/* Styling af footer */
+
+.bold_font {
+  font-weight: bold;
+  color: gray;
+}
+
+.e_avis {
+  margin-bottom: 15px;
+}
+
+.read_where_you_want {
+  margin-top: 15px;
+}
+
+.follow {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.information_every_morning {
+  margin-bottom: 10px;
+}
+
+.sign_up_btn {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="submit"] {
+    border: none; /* Removing the border around */
+    
+}
+
+input[type="submit"] {
+  padding: 1px 20px; /* Adjust padding to make the button taller and wider */
+  background-color: #c8ccce; 
+  color: rgb(127, 124, 124); 
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.buy_paper {
+  margin-bottom: 15px;
+}
+
+.about_information {
+  margin-bottom: 10px;
+}
+
+.sentia {
+  margin-top: 40px;
+}
+
+/* Removing the bulets from the ul li list */
+ul {
+  list-style-type: none;
+}
+
+.footer_grid_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px 400px 100px; /* the row heights */
+  gap: 10px;
+/*   border: 1px solid black; */   /* Kept this code so I can re-activate it and see the borders of the grid */
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.grid_item_4 {
+/*   border: 1px solid gray; */  /* Kept this code so I can re-activate it and see the borders of the grid */
+  padding: 5px;
+  text-align: center;
+  background-color: lightgray; /* A grey background for all the grids */
+}
+
+/* This code is only for the top of the grid (to keep the rows white) */
+.grid_item_4:nth-child(-n+4) {
+  background-color: white; /* White background for the first 4 rows */
+}
+
+/* Styling of the picture in the grid */
+.footer_grid_image {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 2;
+} 
+
+/* Styling of the last text in the grid footer*/
+.footer_info {
+  grid-column-start: 1;
+  grid-column-end: 5;
+/*   border: 1px solid gray; */ /* Kept this code so I can re-activate it and see the borders of the grid */
+  padding: 10px;
+  text-align: center;
+  background-color: lightgray;
+}
+
+.info_text_footer {
+  margin-bottom: 20px;
+}
+
+.footer_btn {
+  padding: 10px 20px; /* Adjust padding adjustet to make the button bigger */
+  border: none; /* Removing the border around the button */
+  background-color: #c8ccce; 
+  color: rgb(127, 124, 124); 
+  cursor: pointer;
+  font-weight: bold;
 }
